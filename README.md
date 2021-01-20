@@ -26,13 +26,13 @@
 
 ![2c](images/Capture4.PNG)
 
-#Question 3
+# Question 3
 
 ## (a)
 
 ## (b)
 
-#Question 4
+# Question 4
 
 ## (a)
 
@@ -53,7 +53,7 @@
 - Arduino
 - XCode
 
-#Question 5
+# Question 5
 
 ## (a)
 
