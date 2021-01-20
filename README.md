@@ -8,11 +8,11 @@
 
 ## (a)
 
-![1a](images/Capture1.png)
+![1a](images/Capture.PNG)
 
 ## (b)
 
-![1b](images/Capture2.png)
+![1b](images/Capture2.PNG)
 
 # Question 2
 
@@ -20,11 +20,11 @@
 
 ## (b)
 
-![2b](images/Capture3.png)
+![2b](images/Capture3.PNG)
 
 ## (c)
 
-![2c](images/Capture4.png)
+![2c](images/Capture4.PNG)
 
 #Question 3
 
