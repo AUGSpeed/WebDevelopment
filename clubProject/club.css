@@ -1,0 +1,52 @@
+header h1 {
+	font-family: "Arial";
+	text-align: center;
+}
+
+body {
+	background-color: LightSteelBlue;
+	margin: 2%;
+	padding: 3%;
+}
+
+nav {
+	background-color: Linen;
+	border-style: solid;
+	border-width: 7px;
+	border-color: LightGoldenRodYellow;
+	max-width: 20%;
+}
+
+nav li {
+	list-style-type: none;
+	display: table;
+}
+
+nav li:hover {
+	background-color: LightCoral;
+}
+
+nav li:active {
+	background-color: Coral;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: black;
+}
+
+.active{
+	background-color: Pink;
+}
+
+main {
+	background-color: Linen;
+}
+
+footer {
+	text-align: center;
+	font-family: "Helvetica";
+}
