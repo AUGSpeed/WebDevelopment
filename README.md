@@ -11,7 +11,9 @@
 ## (b)
 
 (i) No, you should not put site-wide navigation into main.
+
 (ii) You should not put common banners into main either.
+
 (iii) You should not put copyright in main either.
 
 ## (c)
@@ -24,7 +26,7 @@
 
 ## (a)
 
-We should use this inside of <main> for this purpose.
+We should use this inside of main for this purpose.
 
 ## (b)
 
