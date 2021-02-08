@@ -16,7 +16,7 @@
 
 ## (c)
 
-I accidentally already did this in the last assignment, but I will but the relevant code here still.
+I accidentally already did this in the last assignment, but I will put the relevant code here still.
 
 ```css
 
@@ -113,10 +113,15 @@ http://csweb01.csueastbay.edu/~fr5826/clubProject/index.html
 ## (a)
 
 (i) This splits our sentence string into multiple other strings and puts it into an array.
+
 (ii) This adds a string to the end of our array
+
 (iii) This prints all of the strings out as one string attached by underscores.
+
 (iv) This locates galaxy's index in our array, returns that number and stores it in a variable called tempIndex.
+
 (v) Yes, you did.
+
 (vi) This returns the last array item, and also removes it from the array.
 
 ![4a](images/Capture5.PNG)
@@ -124,13 +129,17 @@ http://csweb01.csueastbay.edu/~fr5826/clubProject/index.html
 ## (b)
 
 (i) This function makes the string given all uppercase.
+
 (ii) This map will loop through all of the elements in myArray2 and pass them through the 'upper' function.
+
 (iii) Because the comparing here is based on unicode order, and uppercase and lowercase letters have different values, meaning if they were different cases, then the sorting would not be alphabetical as we see it.
+
 (iv) The purpose is to sort every single item in the array using our function, so passing our function to the array's build in sort loop is essential.
 
 ## (c)
 
 (i) We put a space in the name of the property, so we needed to save that name as a string value using bracket notation.
+
 (ii) Yes, you can.
 
 ![4c](images/Capture6.PNG)
