@@ -50,3 +50,21 @@ footer {
 	text-align: center;
 	font-family: "Helvetica";
 }
+
+table,td,th {
+	border: 3px solid;
+	border-color: Blue;
+	border-collapse: collapse;
+}
+
+table td,th{
+	padding: 6px;
+}
+
+table td {
+	background-color: LightGrey;
+}
+
+table th {
+	background-color: Grey;
+}

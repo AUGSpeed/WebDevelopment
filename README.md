@@ -2,213 +2,137 @@
 
 **NetID: fr5826**
 
-# Homework #2 Solution
+# Homework #3 Solution
 
 # Question 1
 
 ## (a)
 
+![1a](images/Capture.PNG)
+
 ## (b)
 
-(i) No, you should not put site-wide navigation into main.
-
-(ii) You should not put common banners into main either.
-
-(iii) You should not put copyright in main either.
+![1b](images/Capture2.PNG)
 
 ## (c)
 
-## (d)
+I accidentally already did this in the last assignment, but I will but the relevant code here still.
 
-## (e)
+```css
+
+nav li {
+	list-style-type: none;
+	display: table;
+}
+
+nav li:hover {
+	background-color: LightCoral;
+}
+
+nav li:active {
+	background-color: Coral;
+}
+
+```
 
 # Question 2
 
 ## (a)
 
-We should use this inside of main for this purpose.
-
 ## (b)
 
-Yes, it is okay to put the footer in main as well as the last thing in body. I think I would prefer it to be the last item in body, as the copyright info will not likely change from page to page.
+```html
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Time</th>
+			<th>Description</th>
+		</tr>
+	<thead>
+	<tbody>
+		<tr>
+			<td>How to mod: Fallout 4</td>
+			<td>Saturdays @ 10 AM PST</td>
+			<td>A simple seminar hosted by F4EE author Michael "AUGSpeed" LaRussa. This is for anyone who may want to get into Fallout 4 modding, and want to ask questions or just hangout.</td>
+		</tr>
+		<tr>
+			<td>Modding Ethics Discussion</td>
+			<td>First Wednesday of every month</td>
+			<td>Copyright, intellectual property and modding. What is it all about? Come talk with us and learn and discuss about ethical dilemmas within the modding community.</td>
+		</tr>
+		<tr>
+			<td>Happy Hour</td>
+			<td>Friday Nights</td>
+			<td>The whole club is invited to join us in a random game for the night! Suggestions are very welcome, and we will all call using Discord.</td>
+		</tr>
+	</tbody>
+</table>
+
+```
 
 ## (c)
 
-![2c](images/Capture.PNG)
+![2c](images/Capture3.PNG)
 
-## (d)
+```css
 
-```html
-<!DOCTYPE html>
-<html lang="en"> <!-- English -->
-    <head>
-		<meta charset="UTF-8">
-        <title>CVGMC</title>
-    </head>
-    <!-- I'm an HTML comment -->
-    <body>
-	
-		<nav>
-		
-			<ul>
-			
-				<li class = "active"><a href="index.html">Home</a></li>
-				<li><a href="login.html">Login</a></li>
-				<li><a href="activities.html">Activities</a></li>
-			
-			</ul>
-		
-		</nav>
-	
-		<main>
-		
-			<header>
-				<h1>California Video Game Modders Club</h1>
-			</header>
-			
-			<h2>What is modding?</h2>
-			<p>Modding is the act of modifying the files of a video game to create something new with it.</p>
-			<h2>What games do we mod?</h2>
-			<p>The primary games we mod are large, open-ended games with easily read game-files, such as Bethesda Softworks' Skyrim, or Mojang's Minecraft.</p>
-			<h2>Why do we mod?</h2>
-			<p>Because it is a good learning experience, since not all of us can make a game from scratch!</p>
-	
-		</main>
-		
-		<footer>
-		
-			<p>&copy 2021 Michael LaRussa</p>
-		
-		</footer>
-    </body>
-</html>
+table,td,th {
+	border: 3px solid;
+	border-color: Blue;
+	border-collapse: collapse;
+}
+
+table td,th{
+	padding: 6px;
+}
+
+table td {
+	background-color: LightGrey;
+}
+
+table th {
+	background-color: Grey;
+}
+
 ```
 
 # Question 3
 
 ## (a)
 
-(i) We are trying to get an integer from a string that contains no numbers, so we get "NaN", or "Not a Number".
-
-(ii) We get 12 from this one because there is actually an integer here.
-
-(iii) This is parsing the string given, but in a different base, outputting the number in base 10. So, this one is interpreting 1010 as base 2, or binary, and that is '10' in base 10. If we replace the 2 with 10, then the result is 1010, which is 1010 in base 10.
-
-(iiii) No, this is not the same as (ii), this gives us "NaN".
-
-![3a](images/Capture2.PNG)
+![3a](images/Capture4.PNG)
 
 ## (b)
 
-![3b](images/Capture3.PNG)
-
-## (c)
-
-(i) Yes, it does work.
-
-(ii) This does not work because the string delimiter is the same as the symbol used to denote a conjunction.
-
-(iii) We are telling the computer that the singe quotation mark is not a string delimiter but rather a part of a string.
-
-![3c](images/Capture4.PNG)
-
-## (d)
-
-(i) This simply made the name uppercase.
-
-(ii) This made the name lowercase.
-
-(iii) These two lines determine if there is a captial A in my upper case name, and a lowercase i in my name, and reports true if there is, and false if there isn't.
-
-![3d](images/Capture5.PNG)
-
-## (e)
-
-![3e](images/Capture6.PNG)
+http://csweb01.csueastbay.edu/~fr5826/clubProject/index.html
 
 # Question 4
 
 ## (a)
 
-I am using the Arial font.
+(i) This splits our sentence string into multiple other strings and puts it into an array.
+(ii) This adds a string to the end of our array
+(iii) This prints all of the strings out as one string attached by underscores.
+(iv) This locates galaxy's index in our array, returns that number and stores it in a variable called tempIndex.
+(v) Yes, you did.
+(vi) This returns the last array item, and also removes it from the array.
+
+![4a](images/Capture5.PNG)
 
 ## (b)
 
-![4b](images/Capture7.PNG)
+(i) This function makes the string given all uppercase.
+(ii) This map will loop through all of the elements in myArray2 and pass them through the 'upper' function.
+(iii) Because the comparing here is based on unicode order, and uppercase and lowercase letters have different values, meaning if they were different cases, then the sorting would not be alphabetical as we see it.
+(iv) The purpose is to sort every single item in the array using our function, so passing our function to the array's build in sort loop is essential.
 
 ## (c)
-```css
-nav li {
-	list-style-type: none;
-	display: table;
-}
 
-nav li:hover {
-	background-color: LightCoral;
-}
+(i) We put a space in the name of the property, so we needed to save that name as a string value using bracket notation.
+(ii) Yes, you can.
 
-nav li:active {
-	background-color: Coral;
-}
-```
+![4c](images/Capture6.PNG)
 
-![4c](images/Capture8.PNG)
 
-## (d)
-
-![4d](images/Capture9.PNG)
-
-```css
-header h1 {
-	font-family: "Arial";
-	text-align: center;
-}
-
-body {
-	background-color: LightSteelBlue;
-	margin: 2%;
-	padding: 3%;
-}
-
-nav {
-	background-color: Linen;
-	border-style: solid;
-	border-width: 7px;
-	border-color: LightGoldenRodYellow;
-	max-width: 20%;
-}
-
-nav li {
-	list-style-type: none;
-	display: table;
-}
-
-nav li:hover {
-	background-color: LightCoral;
-}
-
-nav li:active {
-	background-color: Coral;
-}
-
-nav a {
-	text-decoration: none;
-}
-
-nav a:visited {
-	color: black;
-}
-
-.active{
-	background-color: Pink;
-}
-
-main {
-	background-color: Linen;
-}
-
-footer {
-	text-align: center;
-	font-family: "Helvetica";
-}
-```
