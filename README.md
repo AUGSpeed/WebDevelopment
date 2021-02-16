@@ -12,8 +12,6 @@
 
 ## (c)
 
-I accidentally already did this in the last assignment, but I will put the relevant code here still.
-
 ```javascript
 function create() { 
             
