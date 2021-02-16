@@ -149,8 +149,6 @@ document.getElementById("form1").addEventListener('submit', function(event){
 
 ## (b)
 
-(
-
 ## (c)
 
 ```javascript
