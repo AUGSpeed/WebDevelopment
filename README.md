@@ -2,99 +2,109 @@
 
 **NetID: fr5826**
 
-# Homework #3 Solution
+# Homework #4 Solution
 
 # Question 1
 
 ## (a)
 
-![1a](images/Capture.PNG)
-
 ## (b)
-
-![1b](images/Capture2.PNG)
 
 ## (c)
 
 I accidentally already did this in the last assignment, but I will put the relevant code here still.
 
-```css
-
-nav li {
-	list-style-type: none;
-	display: table;
-}
-
-nav li:hover {
-	background-color: LightCoral;
-}
-
-nav li:active {
-	background-color: Coral;
-}
-
+```javascript
+function create() { 
+            
+			mainSection = document.getElementById("Main");
+			
+            var newT = document.createElement("table"); 
+            newT.setAttribute("id", "EventsTable"); 
+            Main.appendChild(newT); 
+  
+            var newR = document.createElement("tr"); 
+            newR.setAttribute("id", "Row1"); 
+            document.getElementById("EventsTable").appendChild(newR); 
+  
+            var newC = document.createElement("th"); 
+            var newText = document.createTextNode("Name"); 
+            newC.appendChild(newText); 
+            document.getElementById("Row1").appendChild(newC); 
+			
+			newC = document.createElement("th"); 
+			newText = document.createTextNode("Dates"); 
+            newC.appendChild(newText); 
+            document.getElementById("Row1").appendChild(newC);
+			
+			newR = document.createElement("tr"); 
+            newR.setAttribute("id", "Row2"); 
+            document.getElementById("EventsTable").appendChild(newR); 
+			
+			newC = document.createElement("td"); 
+			newText = document.createTextNode(events[0].name); 
+            newC.appendChild(newText); 
+            document.getElementById("Row2").appendChild(newC);
+			
+			newC = document.createElement("td"); 
+			newText = document.createTextNode(events[0].dates); 
+            newC.appendChild(newText); 
+            document.getElementById("Row2").appendChild(newC);
+			
+			newR = document.createElement("tr"); 
+            newR.setAttribute("id", "Row3"); 
+            document.getElementById("EventsTable").appendChild(newR); 
+			
+			newC = document.createElement("td"); 
+			newText = document.createTextNode(events[1].name); 
+            newC.appendChild(newText); 
+            document.getElementById("Row3").appendChild(newC);
+			
+			newC = document.createElement("td"); 
+			newText = document.createTextNode(events[1].dates); 
+            newC.appendChild(newText); 
+            document.getElementById("Row3").appendChild(newC);
+			
+			newR = document.createElement("tr"); 
+            newR.setAttribute("id", "Row4"); 
+            document.getElementById("EventsTable").appendChild(newR); 
+			
+			newC = document.createElement("td"); 
+			newText = document.createTextNode(events[2].name); 
+            newC.appendChild(newText); 
+            document.getElementById("Row4").appendChild(newC);
+			
+			newC = document.createElement("td"); 
+			newText = document.createTextNode(events[2].dates); 
+            newC.appendChild(newText); 
+            document.getElementById("Row4").appendChild(newC);
+        }
 ```
+
+![1c](images/Capture.PNG)
 
 # Question 2
 
 ## (a)
 
+![2a](images/Capture2.PNG)
+
 ## (b)
 
 ```html
 
-<table>
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Time</th>
-			<th>Description</th>
-		</tr>
-	<thead>
-	<tbody>
-		<tr>
-			<td>How to mod: Fallout 4</td>
-			<td>Saturdays @ 10 AM PST</td>
-			<td>A simple seminar hosted by F4EE author Michael "AUGSpeed" LaRussa. This is for anyone who may want to get into Fallout 4 modding, and want to ask questions or just hangout.</td>
-		</tr>
-		<tr>
-			<td>Modding Ethics Discussion</td>
-			<td>First Wednesday of every month</td>
-			<td>Copyright, intellectual property and modding. What is it all about? Come talk with us and learn and discuss about ethical dilemmas within the modding community.</td>
-		</tr>
-		<tr>
-			<td>Happy Hour</td>
-			<td>Friday Nights</td>
-			<td>The whole club is invited to join us in a random game for the night! Suggestions are very welcome, and we will all call using Discord.</td>
-		</tr>
-	</tbody>
-</table>
-
-```
-
-## (c)
-
-![2c](images/Capture3.PNG)
-
-```css
-
-table,td,th {
-	border: 3px solid;
-	border-color: Blue;
-	border-collapse: collapse;
-}
-
-table td,th{
-	padding: 6px;
-}
-
-table td {
-	background-color: LightGrey;
-}
-
-table th {
-	background-color: Grey;
-}
+		<nav>
+		
+			<ul>
+			
+				<li><a href="index.html">Home</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="activities.html">Activities</a></li>
+				<li class = "active"><a href="signUp.html">Sign Up</a></li>
+			
+			</ul>
+		
+		</nav>
 
 ```
 
@@ -102,46 +112,81 @@ table th {
 
 ## (a)
 
-![3a](images/Capture4.PNG)
+```html
+
+<header id="top">
+
+<form action="" method="get" id="form1">
+
+```
 
 ## (b)
 
-http://csweb01.csueastbay.edu/~fr5826/clubProject/index.html
+```javascript
+document.getElementById("form1").addEventListener('submit', function(event){
+			event.preventDefault()
+			var warningSection = document.getElementById("top")
+			var warning = document.createElement("p")
+			var text = document.createTextNode("Welcome, " + document.getElementById("email").value + " to California Video Game Modders! Currently, our site is under maintenence, please check back later!")
+			warning.appendChild(text)
+			warningSection.appendChild(warning)
+
+		});
+```
+
+![3b](images/Capture3.PNG)
 
 # Question 4
 
 ## (a)
 
-(i) This splits our sentence string into multiple other strings and puts it into an array.
-
-(ii) This adds a string to the end of our array
-
-(iii) This prints all of the strings out as one string attached by underscores.
-
-(iv) This locates galaxy's index in our array, returns that number and stores it in a variable called tempIndex.
-
-(v) Yes, you did.
-
-(vi) This returns the last array item, and also removes it from the array.
-
-![4a](images/Capture5.PNG)
+```html
+	<label for="name">Enter your name: </label>
+	<input type="text" name="name" id="name" required>
+	<label for="email">&#9993; Enter your email: </label>
+	<input type="email" name="email" id="email" required>
+	<label for="password">Enter your password: </label>
+	<input type="password" name="password" id="password" minlength=7 required>
+```
 
 ## (b)
 
-(i) This function makes the string given all uppercase.
-
-(ii) This map will loop through all of the elements in myArray2 and pass them through the 'upper' function.
-
-(iii) Because the comparing here is based on unicode order, and uppercase and lowercase letters have different values, meaning if they were different cases, then the sorting would not be alphabetical as we see it.
-
-(iv) The purpose is to sort every single item in the array using our function, so passing our function to the array's build in sort loop is essential.
+(
 
 ## (c)
 
-(i) We put a space in the name of the property, so we needed to save that name as a string value using bracket notation.
+```javascript
+document.getElementById("form1").addEventListener('submit', function(event){
+			event.preventDefault()
+			var ThanksSection = document.getElementById("ThanksDialog")
+			var thanks = document.createElement("p")
+			var text = document.createTextNode("Thanks for Applying!")
+			
+			ThanksSection.classList.toggle("show");
+			
+			thanks.appendChild(text)
+			ThanksSection.appendChild(thanks)
+			
+			thanks = document.createElement("p")
+			text = document.createTextNode("Your Name: " + document.getElementById("name").value + ", email: " + document.getElementById("email").value + ", preferred game: " + document.getElementById("game").value)
+			thanks.appendChild(text)
+			var close = document.createElement("button")
+			close.innerHTML = "Close"
+			close.setAttribute("id", "close")
+			ThanksSection.appendChild(thanks)
+			ThanksSection.appendChild(close)
+			close.addEventListener("click", remove)
+		});
+		
+		function remove(){
+			document.getElementById("ThanksDialog").classList.toggle("show")
+		}
+```
 
-(ii) Yes, you can.
+#Question 5
 
-![4c](images/Capture6.PNG)
+## (a)
+
+
 
 

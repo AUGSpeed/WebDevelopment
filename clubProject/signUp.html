@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- English -->
+    <head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="club.css" media="screen"/>
+        <title>CVGMC</title>
+    </head>
+    <!-- I'm an HTML comment -->
+    <body> 
+	
+		<nav>
+		
+			<ul>
+			
+				<li><a href="index.html">Home</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="activities.html">Activities</a></li>
+				<li class = "active"><a href="signUp.html">Sign Up</a></li>
+			
+			</ul>
+		
+		</nav>
+		
+		<main>
+			<header>
+				<h1>Sign Up</h1>
+			</header>
+			<form action="" method="get" id="form1">
+					<label for="name">Enter your name: </label>
+					<input type="text" name="name" id="name" required>
+					<label for="email">&#9993; Enter your email: </label>
+					<input type="email" name="email" id="email" required>
+					<label for="password">Enter your password: </label>
+					<input type="password" name="password" id="password" minlength=7 required>
+					<label for="select">Choose your preferred game: </label>
+					<select name="game" id="game" required>
+						<option value="fallout">Fallout 4</option>
+						<option value="skyrim">Skyrim</option>
+						<option value="cyberpunk">Cyberpunk 2077</option>
+						<option value="witcher">Witcher 3</option>
+					</select>
+					
+					<input type="submit" value="Sign Up!">
+			</form>
+			
+			<section id="ThanksDialog" ></section>
+		
+		</main>
+		
+		<footer>
+		
+			<p>&copy 2021 Michael LaRussa</p>
+		
+		</footer>
+		<script>
+		
+		
+		
+		document.getElementById("form1").addEventListener('submit', function(event){
+			event.preventDefault()
+			var ThanksSection = document.getElementById("ThanksDialog")
+			var thanks = document.createElement("p")
+			var text = document.createTextNode("Thanks for Applying!")
+			
+			ThanksSection.classList.toggle("show");
+			
+			thanks.appendChild(text)
+			ThanksSection.appendChild(thanks)
+			
+			thanks = document.createElement("p")
+			text = document.createTextNode("Your Name: " + document.getElementById("name").value + ", email: " + document.getElementById("email").value + ", preferred game: " + document.getElementById("game").value)
+			thanks.appendChild(text)
+			var close = document.createElement("button")
+			close.innerHTML = "Close"
+			close.setAttribute("id", "close")
+			ThanksSection.appendChild(thanks)
+			ThanksSection.appendChild(close)
+			close.addEventListener("click", remove)
+		});
+		
+		function remove(){
+			document.getElementById("ThanksDialog").classList.toggle("show")
+		}
+		
+		
+		</script>
+    </body>
+</html>

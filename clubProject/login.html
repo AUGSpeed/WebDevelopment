@@ -15,17 +15,18 @@
 				<li><a href="index.html">Home</a></li>
 				<li class = "active"><a href="login.html">Login</a></li>
 				<li><a href="activities.html">Activities</a></li>
+				<li><a href="signUp.html">Sign Up</a></li>
 			
 			</ul>
 		
 		</nav>
 		
 		<main>
-			<header>
+			<header id="top">
 				<h1>Login</h1>
 			</header>
 			<img src="images/Red_Rocket.jpg" alt="Red Rocket Truck Stop" width="426" height="234">
-			<form action="" method="get">
+			<form action="" method="get" id="form1">
 					<label for="email">&#9993; Enter your email: </label>
 					<input type="email" name="email" id="email" required>
 					<label for="password">Enter your password: </label>
@@ -40,5 +41,20 @@
 			<p>&copy 2021 Michael LaRussa</p>
 		
 		</footer>
+		
+		<script type="text/javascript">
+
+		document.getElementById("form1").addEventListener('submit', function(event){
+			event.preventDefault()
+			var warningSection = document.getElementById("top")
+			var warning = document.createElement("p")
+			var text = document.createTextNode("Welcome, " + document.getElementById("email").value + " to California Video Game Modders! Currently, our site is under maintenence, please check back later!")
+			warning.appendChild(text)
+			warningSection.appendChild(warning)
+
+		});
+		
+	
+		</script>
     </body>
 </html>
