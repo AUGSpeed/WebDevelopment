@@ -168,7 +168,7 @@ form .grid-container {
 	}
 ```
 
-##(c)
+## (c)
 
 http://csweb01.csueastbay.edu/~fr5826/clubProject/index.html
 
