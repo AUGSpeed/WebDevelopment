@@ -11,14 +11,12 @@
 	
 		<nav>
 		
-			<ul>
-			
-				<li><a href="index.html">Home</a></li>
-				<li><a href="login.html">Login</a></li>
-				<li class = "active"><a href="activities.html">Activities</a></li>
-				<li><a href="signUp.html">Sign Up</a></li>
-			
-			</ul>
+			<div class="flex-container">
+				<div><a href="index.html">Home</a></div>
+				<div><a href="login.html">Login</a></div>
+				<div class = "active"><a href="activities.html">Activities</a></div>
+				<div><a href="signUp.html">Sign Up</a></div>
+			</div>
 		
 		</nav>
 	
@@ -37,7 +35,6 @@
 		
 		</footer>
 		<script>
-		function create() { 
             
 			mainSection = document.getElementById("Main");
 			
@@ -100,7 +97,6 @@
 			newText = document.createTextNode(events[2].dates); 
             newC.appendChild(newText); 
             document.getElementById("Row4").appendChild(newC);
-        }
 		</script>
     </body>
 </html>

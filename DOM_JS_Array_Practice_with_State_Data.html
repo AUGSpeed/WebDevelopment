@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM JS Array Practice with State Data</title>
+    <script src="states.js"></script>
+    <style>
+        main {
+            max-width: 40em;
+            background-color: white;
+        }
+        
+        body {
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #AbbrGame div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #AbbrGame article {
+            width: 10em;
+            border: solid 1px;
+            padding-left: 0.3em;
+            margin-top: 0.2em;
+            margin-right: 0.2em;
+        }
+        
+        #AbbrGame article p {
+            margin: 0.2em;
+        }
+        
+        .happy {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="PageTitle">DOM and Array Practice with US state data</h1>
+        </header>
+        <section id="IntroSection">
+            <h2>JavaScript DOM and Array Practice</h2>
+            <p> This page includes an JavaScript array of objects about states in the US. You will use this data to create DOM elements per the homework instructions.
+            </p>
+            <p>You are not allowed to modify the HTML, only the script tag at the bottom of the body.
+            </p>
+        </section>
+        <section id="LeastPop">
+            <h2>The Five Least Populated States</h2>
+            <ol></ol>
+        </section>
+        <section id="AbbrGame">
+            <h2>Learn Your Abbreviations</h2>
+            <div></div>
+        </section>
+    </main>
+    <script>
+        var LeastPop = document.getElementById("LeastPop");
+		var LeastPopList = LeastPop.querySelector("ol");
+		var statesSorted = states.sort(function(a, b){return b.population_rank - a.population_rank});
+		
+		var state1 = LeastPopList.appendChild(document.createElement("li"));
+		var state2 = LeastPopList.appendChild(document.createElement("li"));
+		var state3 = LeastPopList.appendChild(document.createElement("li"));
+		var state4 = LeastPopList.appendChild(document.createElement("li"));
+		var state5 = LeastPopList.appendChild(document.createElement("li"));
+		
+		state1.appendChild(document.createTextNode(statesSorted[0].state + ", Code:" + statesSorted[0].code + ", Population:" + statesSorted[0].population + ", Capital:" + statesSorted[0].capital_city));
+		state2.appendChild(document.createTextNode(statesSorted[1].state + ", Code:" + statesSorted[1].code + ", Population:" + statesSorted[1].population + ", Capital:" + statesSorted[1].capital_city));
+		state3.appendChild(document.createTextNode(statesSorted[2].state + ", Code:" + statesSorted[2].code + ", Population:" + statesSorted[2].population + ", Capital:" + statesSorted[2].capital_city));
+		state4.appendChild(document.createTextNode(statesSorted[3].state + ", Code:" + statesSorted[3].code + ", Population:" + statesSorted[3].population + ", Capital:" + statesSorted[3].capital_city));
+		state5.appendChild(document.createTextNode(statesSorted[4].state + ", Code:" + statesSorted[4].code + ", Population:" + statesSorted[4].population + ", Capital:" + statesSorted[4].capital_city));
+
+		for (var i = 0; i <= 49; i++)
+		{
+			var New_Article = document.getElementById("AbbrGame").querySelector("div").appendChild(document.createElement("article"));
+			New_Article.appendChild(document.createElement("p").appendChild(document.createTextNode(states[i].state)));
+			var newInput = document.createElement("input");
+			newInput.setAttribute("id", states[i].code);
+			newInput.setAttribute("type", "text");
+			New_Article.appendChild(newInput);
+			var newP = document.createElement("p");
+			var newSmall = document.createElement("small");
+			newSmall.appendChild(document.createTextNode("Hint"));
+			newSmall.setAttribute("title", states[0].code);
+			newP.appendChild(newSmall);
+			New_Article.appendChild(newP)
+		}
+    </script>
+</body>
+
+</html>
