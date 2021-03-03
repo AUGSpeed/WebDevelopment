@@ -1,6 +1,19 @@
 /* Put your CSS BELOW here variant B*/
 
+body {
+	background-color: rosybrown;
+}
 
+main {
+	background-color: gold;
+	border: double 20px;
+	border-color: ghostwhite;
+	padding: 10px;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 50px;
+	max-width: 25%;
+}
 
 
 /* Put your CSS ABOVE here */
