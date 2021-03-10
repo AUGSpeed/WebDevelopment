@@ -7,7 +7,7 @@ let events = require('./eventData.json');
 console.log(events[0].name + ": " + events[0].dates + "\n" + events[1].name + ": " + events[1].dates + "\n" + events[2].name + ": " + events[2].dates + "\n");
 
 const matter = require('gray-matter');
-let metaAndContent = matter(fdata); // gives and object with content and data components
+let metaAndContent = matter(fdata); // gives and object with content and data components\
 console.log(metaAndContent.data.title);
 
 let commonmark = require('commonmark');
@@ -16,7 +16,6 @@ let writer = new commonmark.HtmlRenderer();
 fname = __dirname + '/about.html';
 let parsed = reader.parse(fdata);
 let result = writer.render(parsed);
-console.log(result);
 
 const nunjucks = require('nunjucks');
 
