@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{title | safe}}</title>
+        <meta name="author" content="{{author | safe}}">
+        <meta name="description" content="{{description | safe}}">
+		<link rel="stylesheet" type="text/css" href="club.css" media="screen"/>
+    </head>
+    <body>
+        <nav>
+			{% include "mainMenu.html" %}
+        </nav>
+        <main>
+            {{mainContent | safe}}
+        </main>
+    </body>
+</html>

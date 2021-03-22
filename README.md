@@ -7,7 +7,7 @@
 ## Question 1
 
 
-Sorry, this was just too complicated for me. Give me a 0/30 on this question.
+As you might see, I simply could not get this to work. My processIt.js was not working for me, and I do not understand why. I also only converted one file to MD because I have no clue how to make forms work in MD. I am just very confused. I won't be uploading this to the file server, that's for sure. I am okay with a 0/30 here, I just want to know what I was even supposed to know how to do. I read the slides and couldn't find what I was looking for, so this is all I've got. I don't want to tear out my hair for another full week trying to get this to work.
 
 
 ## Question 2
