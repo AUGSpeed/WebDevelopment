@@ -1,0 +1,141 @@
+header h1 {
+	font-family: "Arial";
+	text-align: center;
+}
+
+header p {
+
+	font-family: "Arial";
+	text-align: center;
+	font-size: 25px;
+	border-style:solid;
+	border-color: Red;
+	border-width: 10px;
+	max-width: 50%;
+	background-color:LightGrey;
+}
+
+body {
+	background-color: LightSteelBlue;
+	margin: 2%;
+	padding: 3%;
+	margin-top: 40px;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	width: 89.25%;
+	background-color: Linen;
+	border-style: solid;
+	border-width: 7px;
+	border-color: LightGoldenRodYellow;
+}
+
+nav .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav .flex-container > div {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+nav .flex-container > div:hover {
+	background-color: LightCoral;
+}
+
+nav .flex-container > div:active {
+	background-color: Coral;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: black;
+}
+
+.active{
+	background-color: Pink;
+}
+
+main {
+	background-color: Linen;
+	max-width:800px;
+	min-width:400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	text-align: center;
+	font-family: "Helvetica";
+}
+
+table,td,th {
+	border: 3px solid;
+	border-color: Blue;
+	border-collapse: collapse;
+}
+
+table td,th{
+	padding: 6px;
+}
+
+table td {
+	background-color: LightGrey;
+}
+
+table th {
+	background-color: Grey;
+}
+
+input:required:valid {
+	background-color: Mint;
+	border-style: solid;
+	border-color: Green;
+	border-width: 3px;
+}
+
+input:required:invalid {
+	background-color: Pink;
+	border-style: solid;
+	border-color: Red;
+	border-width: 3px;
+}
+
+section {
+	border-style: solid;
+	border-color: Blue;
+	border-width: 3px;
+	margin-left: -2000px; 
+	margin-right: 2000px; 
+	height: 0px;
+}
+
+.show {
+	margin-left: 50px;
+	margin-right: 20%;
+	height: 100px;
+}
+
+main .flex-container {
+	justify-content: center;
+	padding: 10px;
+}
+
+form .grid-container {
+	display: grid;
+	grid-template-columns: 150px 100px;
+	grid-gap: 10px;
+	padding: 10px;
+	justify-content: center;
+}
+

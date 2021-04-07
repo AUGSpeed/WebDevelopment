@@ -1,0 +1,11 @@
+{% extends "base.njk" %}
+
+{% block metaStuff %}
+        <title>Homepage</title>
+{% endblock %}
+    
+{% block main %}
+    <h1>Hello from {{name}}</h1>
+    <h2>NetID: {{netID}}</h2>
+    <p>This server has been visited {{count}} times!</p>
+{% endblock %}
