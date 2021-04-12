@@ -1,0 +1,43 @@
+{% extends "clubBase.njk" %}
+
+{% block metaStuff %}
+        <title>Login</title>
+{% endblock %}
+
+{% block styleStuff %}
+	form .grid-container {
+	display: grid;
+	grid-template-columns: 175px auto;
+	grid-gap: 10px;
+	padding: 10px;
+	justify-content: center;
+	text-align: right;
+	}
+{% endblock %}
+    
+{% block main %}
+    <header>
+		<h1>Sign Up</h1>
+		</header>
+		<form action="./membershipSignup" method="post" id="form1">
+		<div class ="grid-container">
+			<div class="item1"><label for="name">Enter your name: </label></div>
+			<div class="item1"><input type="text" name="name" id="name" required></div>
+			<div class="item1"><label for="email">&#9993; Enter your email: </label></div>
+			<div class="item1"><input type="email" name="email" id="email" required></div>
+			<div class="item1"><label for="password">Enter your password: </label></div>
+			<div class="item1"><input type="password" name="password" id="password" minlength=7 required></div>
+			<div class="item1"><label for="select">Choose your preferred game: </label></div>
+			<div class="item1"><select name="game" id="game" required>
+				<option value="fallout">Fallout 4</option>
+				<option value="skyrim">Skyrim</option>
+				<option value="cyberpunk">Cyberpunk 2077</option>
+			<option value="witcher">Witcher 3</option>
+			</select></div>
+					
+			<div class="item1"><input type="submit" value="Sign Up!"></div>
+			</div>
+		</form>
+			
+	<section id="ThanksDialog" ></section>
+{% endblock %}

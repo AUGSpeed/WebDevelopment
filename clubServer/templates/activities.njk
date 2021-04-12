@@ -1,0 +1,29 @@
+{% extends "clubBase.njk" %}
+
+{% block metaStuff %}
+        <title>Activities</title>
+{% endblock %}
+    
+{% block main %}
+    <header>
+		<h1>Activities</h1>
+	</header>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Dates</th>
+		</tr>
+		<tr>
+			<td>{{ activities.events[0].name }}</td>
+			<td>{{ activities.events[0].dates }}</td>
+		</tr>
+		<tr>
+			<td>{{ activities.events[1].name }}</td>
+			<td>{{ activities.events[1].dates }}</td>
+		</tr>
+		<tr>
+			<td>{{ activities.events[2].name }}</td>
+			<td>{{ activities.events[2].dates }}</td>
+		</tr>
+	</table>
+{% endblock %}

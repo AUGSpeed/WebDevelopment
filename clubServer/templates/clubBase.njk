@@ -6,9 +6,23 @@
         {% block metaStuff %}
         <title>California Video Game Modders Club</title>
         {% endblock %}
-        <link href="club.css" rel="stylesheet">
+        <link href="./club.css" rel="stylesheet">
+		<style>
+			{% block styleStuff %}
+			{% endblock %}
+		</style>
     </head>
     <body>
+		<nav>
+			
+			<div class="flex-container">
+				<div><a href="./">Home</a></div>
+				<div><a href="./login">Login</a></div>
+				<div><a href="./activities">Activities</a></div>
+				<div><a href="./membership">Membership</a></div>
+			</div>
+		
+		</nav>
     <main>
         {% block main %}{% endblock %}
     </main>

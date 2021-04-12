@@ -1,0 +1,22 @@
+{% extends "clubBase.njk" %}
+
+{% block metaStuff %}
+        <title>Thanks!</title>
+{% endblock %}
+    
+{% block main %}
+    <header id="top">
+		<h1>Thanks for Signing up!</h1>
+	</header>
+				
+	<form action="" method="get" id="form1">
+		<div class ="grid-container">
+			<div class="item1">Name:</div>
+			<div class="item2">{{ name }}</div>
+			<div class="item3">Email:</div>
+			<div class="item4">{{ email }}</div>
+			<div class="item5">Game:</div>
+			<div class="item6">{{ game }}</div>
+		</div>
+	</form>
+{% endblock %}
