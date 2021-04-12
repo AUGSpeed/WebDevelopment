@@ -136,96 +136,18 @@
 
 ### (b)
 
-![3b](images/Capture4.PNG)
+![3b](images/Capture3.PNG)
 
 ### (c)
 
-![3c](images/Capture5.PNG)
-
-![3c](images/Capture6.PNG)
+![3c](images/Capture4.PNG)
 
 ## Question 4
 
 ### (a)
 
+![4a](images/Capture5.PNG)
+
 ### (b)
 
-### (c)
-
-```HTML
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% block metaStuff %}
-        <title>California Video Game Modders Club</title>
-        {% endblock %}
-        <link href="css/club.css" rel="stylesheet">
-    </head>
-    <body>
-    <main>
-        {% block main %}
-		<p>This server has been visited {{count}} times!</p>
-		{% endblock %}
-    </main>
-    <footer>
-        <p>&copy; 2021 Michael LaRussa</p>
-    </footer>
-    </body>
-</html>
-```
-
-### (d)
-
-```nunjuks
-{% extends "base.njk" %}
-
-{% block metaStuff %}
-        <title>Homepage</title>
-{% endblock %}
-    
-{% block main %}
-    <h1>Hello from {{name}}</h1>
-    <h2>NetID: {{netID}}</h2>
-    <p>This server has been visited {{count}} times!</p>
-{% endblock %}
-```
-
-```nunjuks
-{% extends "base.njk" %}
-
-{% block metaStuff %}
-        <title>Server Uptime</title>
-{% endblock %}
-    
-{% block main %}
-    <h1>Server Uptime</h1>
-    <h2>Server Started: {{start}}</h2>
-    <p>Current Date: {{current}}</p>
-{% endblock %}
-```
-
-### (e)
-
-```javascript
-app.get('/', function (req, res) {
-    count++;
-	let info = {host: host, port: port, name: yourName, count: count, netID: netId}
-    res.render('home.njk', info);
-});
-
-app.get('/uptime', function(req, res){
-    let curDate = new Date();
-	let localDate = startDate.toLocaleString()
-	let currentDate = curDate.toLocaleString()
-	let info = {start: localDate, current: currentDate}
-	res.render('uptime.njk', info);
-})
-```
-
-![3c](images/Capture7.PNG)
-
-### (f)
-
-![3c](images/Capture8.PNG)
+https://www.drbsclasses.org/student13/node/
