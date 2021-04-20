@@ -20,11 +20,18 @@
 				<div><a href="./login">Login</a></div>
 				<div><a href="./activities">Activities</a></div>
 				<div><a href="./membership">Membership</a></div>
+				{% if user.loggedin %}
+				<div><a href="./logout">Logout</a></div>
+				<div><a href="./addActivity">Add an Activity</a></div>
+				{% endif %}
+				{% if user.role == "admin" %}
+				<div><a href="./memberList">Members</a></div>
+				{% endif %}
 			</div>
-		
 		</nav>
     <main>
-        {% block main %}{% endblock %}
+        {% block main %}
+		{% endblock %}
     </main>
     <footer>
         <p>&copy; 2021 Michael LaRussa</p>
