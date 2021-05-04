@@ -8,7 +8,6 @@ class Membership extends React.Component {
 		<header>
 			<h1>Sign Up</h1>
 		</header>
-		<form action="./membershipSignup" method="post" id="form1">
 		<div class ="grid-container">
 			<div class="item1"><label for="name">Enter your name: </label></div>
 			<div class="item1"><input type="text" name="name" id="name" required></input></div>
@@ -26,7 +25,6 @@ class Membership extends React.Component {
 					
 			<div class="item1"><input type="submit" value="Sign Up!"></input></div>
 			</div>
-		</form>
 		</main>
     );
   }

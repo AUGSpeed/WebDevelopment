@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//In no way did you inform us how to access the event data that is passed here from index.js, so I did it the cheaty way.
-import events from "./eventData.json"
 
-console.log(events);
 
-let rows = events.map(function(u){
-  return <tr> <td>{u.name}</td> <td>{u.dates}</td></tr>;
-});
 
 class Activities extends React.Component {
+
+	
+
   render() {
+	  let rows = this.props.events.map(function(u){
+	return <tr> <td>{u.name}</td> <td>{u.dates}</td></tr>;
+	});
     return (
        <main>
 			
