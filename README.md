@@ -1,7 +1,5 @@
 **Michael LaRussa**
 
-**NetID: fr5826**
-
 # Homework #4 Solution
 
 # Question 1
